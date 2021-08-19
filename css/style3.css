@@ -1,0 +1,235 @@
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to top, #ff0000 0%, #000000 100%); 
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white; 
+}
+.nav {
+  overflow: hidden;
+  background-color: rgb(41, 41, 41);
+}
+.nav :hover {
+  background-color: #ff1f1fad;
+  color: #000000;
+  padding: 10px 95px 10px 95px;
+  
+}
+.nav a {
+  background-color: rgb(41, 41, 41);
+  text-align: center;
+  display: block;
+  float: left;
+  text-decoration: none;
+  padding: 10px 95px 10px 95px;
+  color: white;
+}
+
+.accordion {
+  width: 800px; height: 350px;
+  overflow: hidden;
+  margin: 80px auto;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.accordion ul {
+  width: 2000px;
+}
+
+.accordion li {
+  position: relative;
+  display: block;
+  width: 160px;
+  float: left;
+  border-left: 1px solid #888;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+.accordion ul:hover li {width: 40px;}
+.accordion ul li:hover {width: 640px;}
+.accordion li img {
+  display: block;
+}
+
+.image_title {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0; bottom: 10px;  
+  width: 640px; 
+
+}
+.image_title a {
+  display: block;
+  text-align: left; 
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+@keyframes BobbySnuggles {
+  0% {
+    opacity: 0;
+    transform: rotate(15deg) scale(0);
+  }
+  100% {
+    opacity: 1; 
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    background: pink; 
+  }
+}
+/* Footer */  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  position: auto;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content1{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content1 p,a{
+  color: #fff;
+}
+footer .content1 .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content1 .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content1 p{
+  text-align: justify;
+}
+footer .content1 .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content1 .lower i{
+  padding-right: 16px;
+}
+footer .content1 .middle{
+  padding-left: 80px;
+}
+footer .content1 .middle a{
+  line-height: 32px;
+}
+footer .content1 .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content1 .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content1 .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content1 .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content1 .media-icons a:hover{
+  border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #eb2f06;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+@media (max-width:1100px) 
+{
+  footer .content1 .middle
+  {
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px)
+ {
+  footer .content1 .box
+  {
+    width: 50%;
+  }
+}
+  .content1 .right{
+    margin-top: 40px;
+  }
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content1 .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content1 .middle{
+    padding-left: 0;
+  }
+}
+
+
